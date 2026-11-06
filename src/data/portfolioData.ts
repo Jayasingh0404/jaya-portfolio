@@ -1,5 +1,7 @@
 import { Project, SkillCategory, WorkExperience, Certification, DSATopic, BlogPost } from '../types';
 
+const baseUrl = import.meta.env.BASE_URL || '/';
+
 export const personalInfo = {
   name: 'Jaya Singh',
   fullName: 'Gautam Jayasingh Ramdevsingh',
@@ -24,8 +26,8 @@ export const personalInfo = {
   github: 'https://github.com/Jayasingh0404',
   linkedin: 'https://www.linkedin.com/in/jaya-singh-rajput-921024338/',
   leetcode: 'https://leetcode.com/u/Jayasingh0404/',
-  resumeUrl: '/Jaya_Singh_Resume.pdf',
-  photoUrl: '/jaya-photo.jpg',
+  resumeUrl: `${baseUrl}Jaya_Singh_Resume.pdf`,
+  photoUrl: `${baseUrl}jaya-photo.jpg`,
   brandTagline: 'Think. Build. Innovate.',
   status: 'Open to AI/ML & Software Engineering Internships',
 };

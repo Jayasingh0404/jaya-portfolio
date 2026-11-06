@@ -10,7 +10,7 @@ import { NotFound } from './pages/NotFound';
 export const App: React.FC = () => {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectsPage />} />

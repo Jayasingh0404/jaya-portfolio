@@ -18,14 +18,15 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const baseUrl = import.meta.env.BASE_URL || '/';
   const navLinks = [
-    { label: 'About', href: '/#about' },
-    { label: 'Skills', href: '/#skills' },
-    { label: 'Projects', href: '/#projects' },
-    { label: 'Experience', href: '/#experience' },
-    { label: 'DSA Journey', href: '/#dsa' },
-    { label: 'Notes', href: '/#notes' },
-    { label: 'Contact', href: '/#contact' },
+    { label: 'About', href: `${baseUrl}#about` },
+    { label: 'Skills', href: `${baseUrl}#skills` },
+    { label: 'Projects', href: `${baseUrl}#projects` },
+    { label: 'Experience', href: `${baseUrl}#experience` },
+    { label: 'DSA Journey', href: `${baseUrl}#dsa` },
+    { label: 'Notes', href: `${baseUrl}#notes` },
+    { label: 'Contact', href: `${baseUrl}#contact` },
   ];
 
   return (
